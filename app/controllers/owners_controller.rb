@@ -9,6 +9,14 @@ class OwnersController < ApplicationController
     @owner = Owner.find(params[:id])
   end
 
+  def leave
+	@owner.party
+  end
+
+  def join
+	@owner.party
+
+  end
 
 
 end
