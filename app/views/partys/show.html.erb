@@ -1,0 +1,8 @@
+<h3>Party</h3>
+<p>Name: <%= @party.name if @party.name %></p>
+<p>Owners Attending:</p>
+<% @party.owners.each do |owner| %>
+<li><%= owner.name %> Dogs: <%= owner.dogs %> </li> 
+<%= button_to "Join!", join_path(id: owner), :class => "button medium", :method => :patch %>  
+<%= button_to "Leave!", leave_path(id: owner), :class => "button medium", :method => :patch %> 
+<% end %>
