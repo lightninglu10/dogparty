@@ -10,7 +10,7 @@ class PartysController < ApplicationController
 		end
 
 		def show_owners
-			@party.owner
+			@party.owners
 		end
 
 		def param

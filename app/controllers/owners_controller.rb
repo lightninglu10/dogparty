@@ -10,12 +10,11 @@ class OwnersController < ApplicationController
   end
 
   def leave
-	@owner.party
+	   @owner.party
   end
 
   def join
-	@owner.party
-
+	 @owner.party=  current_party 
   end
 
 
