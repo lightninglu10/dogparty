@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   devise_for :partys
-  resources :partys
+  resources :parties
+
 end

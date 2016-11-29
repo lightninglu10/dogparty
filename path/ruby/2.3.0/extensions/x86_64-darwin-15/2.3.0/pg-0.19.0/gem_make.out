@@ -1,5 +1,5 @@
 current directory: /Users/enriquelopez/dogparty/path/ruby/2.3.0/gems/pg-0.19.0/ext
-/Users/enriquelopez/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161123-8048-unf0uv.rb extconf.rb
+/Users/enriquelopez/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20161128-23136-1a1cln7.rb extconf.rb
 checking for pg_config... no
 No pg_config... trying anyway. If building fails, please try again with
  --with-pg-config=/path/to/pg_config

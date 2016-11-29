@@ -10,7 +10,7 @@ puts 'CREATED ADMIN USER: ' << user.email
 
 
 %w(Judy Steve Gabby Daniel Enrique).each do |name|
-  Owner.create name: name, email: name+"@dogparty.com", password: 'dogsrule'
+  User.create name: name, email: name+"@dogparty.com", password: 'dogsrule'
 end
 
 
