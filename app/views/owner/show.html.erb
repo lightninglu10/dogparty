@@ -1,0 +1,7 @@
+<h3>Owner</h3>
+<p>Name: <%= @owner.name if @owner.name %></p>
+<p>Park: <%= @owner.park if @ owner.park %></p>
+<p>Dogs:</p>
+<% @owners.dogs.each do |dog| %>
+<li><%= dog.name %> Weight: <%= dog.weight %> Breed: <%=dog.breed %></li> 
+<% end %>

@@ -1,0 +1,30 @@
+    <h3>Parties 🎉 </h3>
+    <p>Below you will find a ton of parties you can join. If none of the times or places work for you,
+      no worries!
+      <br>
+      Go ahead and create your own party using the "Create a Party" button located
+      at the bottom of the screen.</p>
+      <%= button_to "Create New Party", new_party_path, :method => :get %>
+
+
+<div class="container">
+ <div class="row">
+    <div class="column">
+      <table class="table">
+        <tbody>
+            <% @parties.each do |party| %>
+            <tr>
+              <li><%= party.name %></li> 
+              <%= button_to "Join Party", join_party_path, :method => :get %>
+              <%= button_to "Leave Party", left_party_path, :method => :get %>
+              <%= button_to "Delete", delete_path(id: party), :method => :patch %>  
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+

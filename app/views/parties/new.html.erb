@@ -1,0 +1,5 @@
+<h2> Give us the day and time of your party! </h2>
+<%= simple_form_for Party.new do |f| %>
+  Name <%= f.text_field :name %>
+  <%= f.submit "Create" %>
+<% end %>
